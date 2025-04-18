@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    background-color: rgb(252, 206, 0);
+
+
+}
+form{
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+fieldset{
+    width: max-content;
+    background-color: darkkhaki;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    background-color: burlywood;
+    display: block;
+    margin:0 auto;
+
+}
+a{
+    background-color: rgb(247, 128, 231);
+}

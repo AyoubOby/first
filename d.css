@@ -1,0 +1,24 @@
+h1{
+    text-align:center;
+    background-color: rgb(240, 195, 49);
+    color: rgb(255, 0, 0);
+}
+img{
+    margin-left: auto;
+    margin-right: auto ;
+    width: max-content;
+    
+
+}
+fieldset{
+    text-align: left;
+}
+h3{
+    color: gold;
+}
+h4{
+    color: goldenrod;
+}
+button{
+    color: burlywood;
+}
