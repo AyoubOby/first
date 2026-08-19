@@ -1,21 +1,95 @@
-h1{
-    text-align:center;
-    background-color: rgb(240, 195, 49);
-    color: rgb(255, 0, 0);
+:root {
+  --m-black: #0b0d10;
+  --m-card-bg: #14171d;
+  --m-blue: #0066b1;
+  --m-light-blue: #00a3e0;
+  --m-red: #e21a22;
+  --m-text: #f0f3f6;
+  --m-border: rgba(255, 255, 255, 0.1);
 }
-img{
-    margin-left: auto;
-    margin-right: auto ;
-    width: max-content;
-    
 
+body {
+  background-color: var(--m-black);
+  color: var(--m-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 30px;
 }
-fieldset{
-    text-align: left;
+
+h1 {
+  text-align: center;
+  background: linear-gradient(90deg, var(--m-blue), var(--m-light-blue), var(--m-red));
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
 }
-h3{
-    color: gold;
+
+fieldset {
+  text-align: left;
+  background-color: var(--m-card-bg);
+  border: 1px solid var(--m-border);
+  border-left: 4px solid var(--m-blue);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
-h4{
-    color: goldenrod;
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--m-border);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: var(--m-light-blue);
+  border-bottom: 1px solid var(--m-border);
+  padding-bottom: 5px;
+}
+
+h4 {
+  color: var(--m-red);
+}
+
+mark {
+  background-color: var(--m-red);
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+a {
+  color: var(--m-light-blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--m-red);
+}
+
+button {
+  background-color: var(--m-blue);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--m-red);
 }
