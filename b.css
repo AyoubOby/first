@@ -1,26 +1,100 @@
-h1{
-    text-align: center;
-    background-color: rgb(252, 206, 0);
+:root {
+  --m-black: #0b0d10;
+  --m-card-bg: #14171d;
+  --m-blue: #0066b1;
+  --m-light-blue: #00a3e0;
+  --m-red: #e21a22;
+  --m-text: #ffffff;
+  --m-border: rgba(255, 255, 255, 0.15);
+}
 
+body {
+  background-color: var(--m-black);
+  color: var(--m-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 40px;
+}
 
+h1 {
+  text-align: center;
+  background: linear-gradient(90deg, var(--m-blue), var(--m-red));
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 6px;
+  max-width: 400px;
+  margin: 0 auto 25px auto;
+  text-transform: uppercase;
 }
-form{
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-fieldset{
-    width: max-content;
-    background-color: darkkhaki;
-    margin-left: auto;
-    margin-right: auto;
-}
-button{
-    background-color: burlywood;
-    display: block;
-    margin:0 auto;
 
+form {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
-a{
-    background-color: rgb(247, 128, 231);
+
+fieldset {
+  width: 320px;
+  background-color: var(--m-card-bg);
+  border: 1px solid var(--m-border);
+  border-top: 3px solid var(--m-red);
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+legend {
+  color: var(--m-light-blue);
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+label {
+  color: #b0b8c4;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: #0d0e12;
+  border: 1px solid var(--m-border);
+  color: #fff;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: var(--m-blue);
+}
+
+button {
+  background-color: var(--m-blue);
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 180px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--m-red);
+}
+
+a {
+  background-color: transparent;
+  color: var(--m-light-blue);
 }
