@@ -1,24 +1,79 @@
-h1{
-    text-align:center;
-    background-color: rgb(240, 195, 49);
-    color: rgb(255, 0, 0);
+:root {
+  --m-black: #0b0d10;
+  --m-card-bg: #14171d;
+  --m-blue: #0066b1;
+  --m-light-blue: #00a3e0;
+  --m-red: #e21a22;
+  --m-text: #e1e4e8;
+  --m-border: rgba(255, 255, 255, 0.12);
 }
-img{
-    margin-left: auto;
-    margin-right: auto ;
-    width: max-content;
-    
 
+body {
+  background-color: var(--m-black);
+  color: var(--m-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  margin: 0;
 }
-fieldset{
-    text-align: left;
+
+h1 {
+  text-align: center;
+  background: linear-gradient(90deg, var(--m-blue), var(--m-light-blue), var(--m-red));
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
-h3{
-    color: gold;
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--m-border);
+  margin-bottom: 15px;
 }
-h4{
-    color: goldenrod;
+
+fieldset {
+  text-align: left;
+  background-color: var(--m-card-bg);
+  border: 1px solid var(--m-border);
+  border-top: 3px solid var(--m-blue);
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
-button{
-    color: burlywood;
+
+h3 {
+  color: var(--m-light-blue);
+  font-size: 1.3rem;
+  border-bottom: 1px solid var(--m-border);
+  padding-bottom: 6px;
+  margin-top: 20px;
+}
+
+h4 {
+  color: var(--m-red);
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+button {
+  background-color: var(--m-blue);
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--m-red);
 }
